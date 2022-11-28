@@ -12,26 +12,26 @@
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6 ">
                     <label for="" class="form-label font-monospace">Name</label>
-                    <input type="text" placeholder="name" class="form-control">
+                    <input type="text" name="name" [(ngModel)]="name" placeholder="name" class="form-control">
                 </div>
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Friend Name</label>
-                    <input type="text" placeholder="friend name" class="form-control">
+                    <input type="text" name="friendName" [(ngModel)]="friendName" placeholder="friend name" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
                     <label for="" class="form-label font-monospace">Describe Your Friend</label>
-                    <input type="text" placeholder="describe your friend" class="form-control">
+                    <input type="text" name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" placeholder="describe your friend" class="form-control">
                 </div>
                
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6 ">
                     <label for="" class="form-label font-monospace">Friend Nick Name</label>
-                    <input type="text" placeholder="nickname" class="form-control">
+                    <input type="text" name="friendNickName" [(ngModel)]="friendNickName"  placeholder="nickname" class="form-control">
                 </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center my-5">
-                    <button class="btn btn-dark font-monospace py-1">Submit</button>
+                    <button (click)="readValues()" class="btn btn-dark font-monospace py-1">Submit</button>
                 </div>
             </div>
         </div>
